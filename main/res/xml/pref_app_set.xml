@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="match_not_switch"
+        android:title="@string/pref_new_match" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="mess_not_switch"
+        android:title="@string/pref_new_mess" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="mess_like_switch"
+        android:title="@string/pref_new_like" />
+
+</PreferenceScreen>
