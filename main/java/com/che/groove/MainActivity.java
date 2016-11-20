@@ -17,7 +17,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.content.Intent;
+import android.widget.EditText;
 
 // Begin SettingsActivity imports
 import android.annotation.TargetApi;
@@ -90,6 +93,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void moveMatches(View view){
+        Intent intent = new Intent(this, MessagesHomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void moveHome(View view){
+        Intent intent = new Intent(this, MyHomeActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -139,13 +151,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
+
+        /** Called when the user clicks the Third Tab Button */
+
     }
 
     /**
