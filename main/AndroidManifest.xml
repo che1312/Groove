@@ -18,13 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HomeActivity"
-            android:label="Home Activity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-
-            </intent-filter>
+        <activity android:name=".MatchesActivity" />
+        <activity android:name=".MessagesHomeActivity" />
+        <activity android:name=".MyHomeActivity"></activity>
     </application>
 
 </manifest>
