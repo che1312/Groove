@@ -5,39 +5,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/button_onoff_indicator_off"
-                android:id="@+id/imageButton"
-                android:layout_weight="1" />
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/button_onoff_indicator_on"
-                android:id="@+id/imageButton2"
-                android:layout_weight="1" />
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/button_onoff_indicator_off"
-                android:id="@+id/imageButton3"
-                android:layout_weight="1" />
-        </LinearLayout>
-</android.support.design.widget.AppBarLayout>
 
 <TextView
 android:id="@+id/section_label"
