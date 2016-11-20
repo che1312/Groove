@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_messages_home"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/button_onoff_indicator_off"
+                android:id="@+id/imageButton"
+                android:layout_weight="1"
+                android:onClick="moveHome"/>
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/button_onoff_indicator_off"
+                android:id="@+id/imageButton2"
+                android:layout_weight="1"
+                android:onClick="moveMain"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/button_onoff_indicator_off"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="285dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:id="@+id/imageButton4"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="285dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:id="@+id/imageButton4"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="285dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:id="@+id/imageButton4"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="285dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:id="@+id/imageButton4"
+        android:background="@null"
+        android:scaleType="fitXY" />
+</LinearLayout>
