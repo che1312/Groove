@@ -84,6 +84,9 @@
         <item>Classical</item>
     </string-array>
 
+    <!-- Messaging Page -->
+    <string name="message_elipses"></string>
+
     <!-- End Discovery Settings -->
 
     <string-array name="list_preference_entries">
