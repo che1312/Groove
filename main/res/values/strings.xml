@@ -24,7 +24,6 @@
     </string-array>
 
     <!-- Home Page -->
-
     <string name="button_disc_set">Discovery Settings</string>
 
     <string name="button_app_set">App Notification Settings</string>
@@ -33,13 +32,10 @@
     <!-- End Home Page -->
 
     <!-- Profile Page -->
-
     <string name="about_you">About You (500 Char)</string>
-
     <!-- End Profile Page -->
 
     <!-- App Settings -->
-
     <string name="app_notif_title">App Notification Settings</string>
 
     <string name="pref_new_match">New Match Notifications</string>
@@ -47,13 +43,10 @@
     <string name="pref_new_mess">New Message Notifications</string>
 
     <string name="pref_new_like">New Like Notifications</string>
-
     <!-- App Settings -->
 
     <!-- Discovery Settings -->
-
     <string name="pref_header_disc_set">Discovery &amp; Settings</string>
-
     <string name="pref_inst_search_title">Instruments</string>
     <string name="pref_inst_search_summ">What instruments are you looking for?</string>
     <string-array name="pref_inst_search_values">
@@ -83,7 +76,6 @@
         <item>Country</item>
         <item>Classical</item>
     </string-array>
-
     <!-- End Discovery Settings -->
 
     <string-array name="list_preference_entries">
@@ -102,5 +94,7 @@
 
     <string name="pref_title_system_sync_settings">System sync settings</string>
 
+    <string name="messengerName">Cody Rice</string>
+    <string name="messagePrev">Hello, how are you?</string>
 
 </resources>

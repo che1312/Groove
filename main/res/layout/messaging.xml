@@ -1,26 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:id="@+id/activity_message_home"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/button_onoff_indicator_off"
+                android:id="@+id/imageButton7"
+                android:layout_weight="1"
+                android:onClick="moveHome"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/button_onoff_indicator_off"
+                android:id="@+id/imageButton8"
+                android:layout_weight="1"
+                android:onClick="moveMain"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/button_onoff_indicator_on"
+                android:id="@+id/imageButton9"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transcriptMode="alwaysScroll"
+        android:padding="0dip"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        tools:listitem="@layout/message_left"
+        android:layout_weight="15"/>
 
     <RelativeLayout
         android:id="@+id/divider"
-        android:layout_width="fill_parent"
-		android:layout_height="1dip"
-		android:background="@android:color/black"
-		android:layout_above="@+id/relSendMessage" />
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray" />
 
     <RelativeLayout
         android:id="@+id/relSendMessage"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="@android:color/white"
-        android:paddingLeft="10dp"
-        android:layout_alignParentBottom="true">
+        android:layout_weight=".01">
 
         <EditText
             android:layout_marginBottom="0dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginRight="74dp"
+            android:layout_marginEnd="74dp"
             android:id="@+id/messageBodyField"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,8 +81,7 @@
             android:textColor="@android:color/black"
             android:layout_alignTop="@+id/sendButton"
             android:background="@android:color/white"
-            android:layout_alignBottom="@+id/sendButton"
-            android:layout_toLeftOf="@+id/sendButton"/>
+            android:layout_alignBottom="@+id/sendButton" />
 
         <Button
             android:text="Send"
@@ -45,21 +96,7 @@
             android:textAllCaps="false"
             android:onClick="send"
             android:fadingEdgeLength="4dp" />
-
-
     </RelativeLayout>
 
-    <ListView
-        android:id="@+id/listMessages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:transcriptMode="alwaysScroll"
-        android:padding="0dip"
-        android:divider="@null"
-        android:dividerHeight="0dp" android:stackFromBottom="true" tools:listitem="@layout/message_left"
-        android:layout_above="@+id/relSendMessage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-
-</RelativeLayout>
+</LinearLayout>

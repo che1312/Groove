@@ -19,7 +19,9 @@
             android:textSize="16sp"
             android:singleLine="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:paddingRight="10dp"
+            android:paddingEnd="10dp"
             android:paddingBottom="6dp"
             android:textColor="@android:color/black" android:textStyle="bold"/>
 
@@ -51,7 +53,7 @@
                 android:layout_alignParentLeft="true"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
-                android:text="Hello, how are you?" />
+                android:text="@string/messagePrev" />
 
         </RelativeLayout>
     </RelativeLayout>
